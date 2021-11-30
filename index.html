@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>GouDan的个人主页</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="bg">
+    <div class="proflieCard">
+        <div class="logo1">
+            <img src="img/goudan.png" alt="" class="logo2">
+        </div>
+        <p class="name">Goudan</p>
+        <div class="slogan" id="slogan">
+            <p class="slogan2" id="slogan2">"唯有爱和科技不可辜负"</p>
+        </div>
+        <div class="buttons">
+            <button class="button1" onclick="aboutMe()">关于我</button>
+            <button class="button1" onclick="window.open('https://blog.csdn.net/lspdd?spm=1018.2226.3001.5343')">进入博客(CSDN)</button>
+        </div>
+        <div class="nav">
+            <div class="link" onclick="window.location = 'person_page/person_page.html'">
+                <div>个人站</div>
+            </div>
+            <div class="link" onclick="window.location = 'hobby/hobby.html'">
+                <div>爱好</div>
+            </div>
+            <div class="link" onclick="window.location = 'zhanguan/02.html'">
+                <div>展馆</div>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://github.com/null-goudan/" >
+                <img src="img/github.png">
+            </a>
+            <a href="https://space.bilibili.com/272806005">
+                <img src="img/icon_bilibili.png">
+            </a>
+            <a href="https://user.qzone.qq.com/837471654?source=namecardhoverqzone" >
+                <img src="img/qq.png">
+            </a>
+            <a href="https://blog.csdn.net/lspdd?spm=1001.2101.3001.5343" >
+                <img src="img/csdn.png">
+            </a>
+        </div>
+        <div></div>
+        <footer class="footer">
+            <p class="footer2">Openned in <a target="_blank" href="https://github.com/null-goudan//">Github</a></p>
+            <p class="footer2">©2021 GouDan &nbsp; 素材来源 <a target="_blank" href="https://card.niconi.co.ni">LL查卡器</a>
+            </p>
+        </footer>
+    </div>
+</div>
+<img src="img/lihui.texb" class="lihui" id="lihui" alt="">
+<div class="background" id="background"></div>
+<div class="yinghua" id="yinghua"></div>
+<div class="background2" id="background2"></div>
+<script src="index.js"></script>
+<script>
+    window.onload=load2D_bg();
+    window.onload=load2D_bg2();
+    window.onload=load2D_bg2_2();
+    window.onload=load2D_lihui();
+    window.onload=load2D_yinghua();
+    var link1 = document.querySelector("body > div.bg > div > div.nav > div:nth-child(1)");
+    link1.onclick = function (){
+        window.location = "person_page/person_page.html";
+    }
+</script>
+</body>
+</html>

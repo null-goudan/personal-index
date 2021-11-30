@@ -1,0 +1,54 @@
+html{
+    background-image: url("../img/background.png");
+    min-height: 1100px;
+    margin: 0;
+}
+
+.back{
+    position: relative;
+    text-align: center;
+    line-height: 80px;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+.main{
+    width: 1200px;
+    margin-top:300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0px 0px 12px #333333;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hobbys{
+    width: 100%;
+    height: 200%;
+    display: flex;
+}
+
+.hobby{
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    background-color: #333333;
+    margin: 20px;
+    color: white;
+}
+.hobby>.title{
+    text-align: center;
+    justify-content:center;
+    font-size: large;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.hobby>.context{
+    text-align: center;
+    font-size: small;
+    line-height: 35px;
+}

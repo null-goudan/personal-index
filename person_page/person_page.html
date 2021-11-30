@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>狗蛋个人站</title>
+    <link rel="stylesheet" href="person_page.css">
+    <script src="person_page.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="left-col">
+            <div class="header"></div>
+            <div class="logo">
+                <img src="../img/head.jpg">
+            </div>
+            <div class="site-name">
+                狗蛋的个人站
+            </div>
+            <div class="motto">
+                对爱的人负责，对爱的事物追逐
+            </div>
+            <div class="links">
+                <div onclick="page1()">个人介绍</div>
+                <div onclick="page2()">个人履历</div>
+                <div onclick="page3()">我的家乡</div>
+                <div onclick="page4()">技术心得</div>
+            </div>
+            <div class="social">
+                <a href="https://github.com/null-goudan/" >
+                    <img src="../img/github.png">
+                </a>
+                <a href="https://space.bilibili.com/272806005">
+                    <img src="../img/icon_bilibili.png">
+                </a>
+                <a href="https://user.qzone.qq.com/837471654?source=namecardhoverqzone" >
+                    <img src="../img/qq.png">
+                </a>
+                <a href="https://blog.csdn.net/lspdd?spm=1001.2101.3001.5343" >
+                    <img src="../img/csdn.png">
+                </a>
+            </div>
+            <div class="back" onclick="window.location = '../index.html'">
+                回到主页
+            </div>
+            <footer class="footer">
+                <p class="footer2">Openned in <a target="_blank" href="https://github.com/null-goudan//">Github</a></p>
+                <p class="footer2">©2021 GouDan</p>
+            </footer>
+        </div>
+        <div class="center-col">
+<!--            个人介绍界面-->
+            <div class="personal" style="display: inline">
+                <div class="center-header">
+                    个人介绍
+                </div>
+                <div class="main">
+                    <img src="../img/head.jpg">
+                    <div class="my">我: </div>
+                    <div class="name">杨毅祥</div>
+                    <div class="my" style="margin-left: 120px">专业: </div>
+                    <div class="name">计算机科学与技术</div>
+                    <div class="tech">
+                        <div class="fuck">
+                            技术栈：
+                        </div>
+                        <div class="tech-items">
+                            <div class="item">
+                                <div class="title">单片机控制类(极客风范):</div>
+                                <div class="tech-context">Arduino、51、stm32、jetson、树莓派</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">C++(主攻):</div>
+                                <div class="tech-context">Qt、MFC、UE、OpenCV、数据结构、算法</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">Python(次修):</div>
+                                <div class="tech-context">深度学习、OpenCV、TensorFlow、Django、数据处理</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">前端(仅仅是兴趣):</div>
+                                <div class="tech-context">HTML+CSS+JS、Vue、微信小程序</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutMe">
+                        <div class="aboutMe-title">
+                            关于我的一些事情:
+                        </div>
+                        <div class="aboutMe-text">
+                            我的计算机生涯从我小学六年级接触易语言开始,到初三之前一边沉迷游戏一边玩着外挂(CE、游侠),初三接触C语言，但是现在
+                            也不是那么厉害,高二接触了JAVA，但是现在都忘光了,大学大一开始接触C++，正式沉迷C++,搞过不到半年的算法竞赛,因为
+                            种种原因退队了,干回自己老本行---开发,一边是软件工程，一边是极客风范的嵌入式。我热爱生活，也热爱我现在的专业。
+                        </div>
+                        <div class="aboutMe-text">
+                            现:&nbsp; &nbsp;郑州轻工业大学电子科技协会骨干、百科融创工作室小骨干
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            个人履历界面-->
+            <div class="personal-resume" style="display: none;">
+                <div class="center-header">
+                    个人履历
+                </div>
+                <div class="main">
+                    <div class="learning">
+                        <div class="title">
+                            我的学习生涯
+                        </div>
+                        <div class="context">
+                            <div>小学 &nbsp; &nbsp;就读于自己县城的一所较好的学校</div>
+                            <div>中学 &nbsp; &nbsp;就读于自己县城的一所普通的学校，虽然普通但是很有压力</div>
+                            <div>高中 &nbsp; &nbsp;不管怎样，我还是上了我们县城最好的高中——获嘉一中，压力很大，但是充实、虽然有挫折
+                            但是我相信这是我成长必经一关</div>
+                            <div>大学 &nbsp; &nbsp;还好努力没有白费，上了一个本科——郑州轻工业大学，虽然不是很尽人意，但是努力过，无悔
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fighting">
+                        <div class="title">
+                            我的竞赛生涯
+                        </div>
+                        <div class="context">
+                            <div>我的竞赛生涯从大一上学期就开始</div>
+                            <div>
+                                大一上学期 &nbsp; &nbsp;虽然我这时候我是生物工程的，但是我依旧跟着我们学校的oj上面的周赛题开始了算法.
+                            </div>
+                            <div>
+                                大一下学期 &nbsp; &nbsp;刚开学是程序设计大赛新生赛二等奖、星光杯电子设计大赛的不同组别都有拿奖、第一个省赛
+                                奖：工程训练赛 河南赛区 全地形爆破小车省三、西门子省赛三等奖、蓝桥杯，因为特殊原因，本该是有奖的，但是最后没奖。
+                                （胡吹，雾）
+                            </div>
+                            <div>
+                                大一暑假 &nbsp;&nbsp; 留校进行比赛准备，参加有三个赛项：人工智能大赛、无人机控制赛、TI电子设计大赛。因为疫情原因
+                                只进行了一个：人工智能大赛，获得了个三等奖。电子设计大赛在大二刚开学搞了，但是现在还没结果
+                            </div>
+                        </div>
+                        <div class="title">
+                            敬请期待...
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            我的家乡界面-->
+            <div class="my-city" style="display: none">
+                <div class="center-header">
+                    我的家乡
+                </div>
+                <div class="main">
+                    <ul class="accordion-container">
+                        <li class="accordion-item" style="background-image: url(../myhome-img/1.jpg);">
+                            <p class="accordion-title"></p>
+                        </li>
+                        <li class="accordion-item" style="background-image: url(../myhome-img/2.jpg);">
+                            <p class="accordion-title"></p>
+                        </li>
+                        <li class="accordion-item" style="background-image: url(../myhome-img/3.jpg);">
+                            <p class="accordion-title"></p>
+                        </li>
+                        <li class="accordion-item" style="background-image: url(../myhome-img/4.jpg);">
+                            <p class="accordion-title"></p>
+                        </li>
+                        <li class="accordion-item" style="background-image: url(../myhome-img/5.jpg);">
+                            <p class="accordion-title"></p>
+                        </li>
+                    </ul>
+                    <div class="city-name">·  我的城市：获嘉  ·</div>
+                    <div class="city-context">
+                        获嘉县隶属于河南省新乡市，北依太行，南临黄河，距省会郑州60公里，东至新乡市15公里，西邻焦作30公里，是中原经济区新、焦、济产业带上的节点城市。获嘉县域面积473平方公里，辖8镇3乡，1个省级产业集聚区，219个行政村。
+                        根据第七次人口普查数据，截至2020年11月1日零时，获嘉县常住人口398137人。
+                        汉元鼎五年（前112年），南越造反，中国皇帝汉武帝出师平叛。次年，武帝东巡至张固城村附近时，恰逢大将路博德派人送来南越宰相吕嘉之首，武帝大喜，遂于此地置县，定名获嘉
+                    </div>
+                    <div class="city-context">
+                        特色美食： 饸饹条
+                    </div>
+                </div>
+            </div>
+            <!--        技术心得界面-->
+            <div class="tech-some" style="display: none">
+                <div class="center-header">
+                    技术心得
+                </div>
+                <div class="main">
+                    <div class="context-title">
+                        深度学习
+                    </div>
+                    <div class="context">
+                        &nbsp; &nbsp;深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。 [1]
+                        深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。 [1]
+                        深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。 [1]
+                    </div>
+
+                    <div class="context-title">
+                        计算机视觉
+                    </div>
+                    <div class="context">
+                        &nbsp; &nbsp;计算机视觉是使用计算机及相关设备对生物视觉的一种模拟。它的主要任务就是通过对采集的图片或视频进行处理以获得相应场景的三维信息，就像人类和许多其他类生物每天所做的那样。
+                        计算机视觉是一门关于如何运用照相机和计算机来获取我们所需的，被拍摄对象的数据与信息的学问。形象地说，就是给计算机安装上眼睛（照相机）和大脑（算法），让计算机能够感知环境。我们中国人的成语"眼见为实"和西方人常说的"One picture is worth ten thousand words"表达了视觉对人类的重要性。不难想象，具有视觉的机器的应用前景能有多么地宽广。
+                        计算机视觉既是工程领域，也是科学领域中的一个富有挑战性重要研究领域。计算机视觉是一门综合性的学科，它已经吸引了来自各个学科的研究者参加到对它的研究之中。其中包括计算机科学和工程、信号处理、物理学、应用数学和统计学，神经生理学和认知科学等。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

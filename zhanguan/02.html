@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            box-shadow: 0px 0px 20px black;
+            position: absolute;
+            border-radius: 5%;
+            content: "image & folow";
+        }
+        div> :first-child{
+            top: 17%;
+            left: 20%;
+            transform: rotate(-17deg);
+            z-index: 0;
+        }
+        div> :nth-child(2){
+            top: 40%;
+            left: 20%;
+            transform: rotate(-20deg);
+            height: 400px;
+            z-index: 5;
+        }
+        div> :nth-child(3){
+            top: 50%;
+            left: 40%;
+            transform: rotate(-5deg);
+            height: 400px;
+            z-index: 1;
+        }
+        div> :nth-child(4){
+            top: 1%;
+            left: 40%;
+            transform: rotate(5deg);
+            height: 500px;
+            width: 600px;
+            z-index: 3;
+        }
+        div> :nth-child(5){
+            top: 30%;
+            left: 45%;
+            transform: rotate(20deg);
+            height: 400px;
+            z-index: 4;
+        }
+        div> :last-child{
+            top: 56%;
+            left: 66%;
+            height: 400px;
+            transform: rotate(-13deg);
+            width: 655px;
+            z-index: 2;
+        }
+        img:hover{
+            top:0px;
+            left: 34%;
+            transform: rotate(0deg);
+            z-index: 100;
+        }
+        div{
+            background-color: rgb(221,228,228);
+            min-width: 120%;
+            min-height: 950px;
+        }
+        .back{
+            position: absolute;
+            text-align: center;
+            line-height: 80px;
+            font-size: large;
+            cursor: pointer;
+            z-index: 999;
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="3.jpg" alt="">
+        <img src="4.jpg" alt="">
+        <img src="5.jpg" alt="">
+        <img src="6.jpg" alt="">
+    </div>
+    <div class="back" onclick="window.location='../index.html'">
+        < 回到首页
+    </div>
+</body>
+</html>

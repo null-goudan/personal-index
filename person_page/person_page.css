@@ -1,0 +1,304 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-family: "Microsoft YaHei UI Light";
+}
+.left-col{
+    position: absolute;
+    height:98%;
+    width: 300px;
+    background-color: white;
+}
+.header{
+    height: 200px;
+    background-color: rgb(77,77,77);
+}
+.logo{
+    position: relative;
+    top: -75px;
+    left: 68px;
+}
+.logo>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: white 10px solid;
+}
+.site-name{
+    font-size: xx-large;
+    font-family: 'kaiti';
+    margin-left: 50px;
+}
+
+.motto{
+    margin-left: 55px;
+    font-size: small;
+    margin-top: 15px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+}
+
+.links>div{
+    flex: 1;
+    margin-top: 20px;
+}
+
+.links>div:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+.social{
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social>a >img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border: #fefefe 1px solid;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.1);
+    color: white;
+    transition: all 0.5s;
+}
+
+.social>a >img:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    height: 45px;
+    width: 45px;
+    box-shadow: 0px 0px 12px #eeeeee;
+    transition: all 0.5s;
+}
+
+.back{
+    margin-left: 110px;
+}
+.back:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+.footer{
+    position: relative;
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    font-size: 10px;
+}
+
+.footer2{
+    text-align: center;
+}
+
+a{
+    color: rgb(77,77,77);
+}
+
+.center-col{
+    margin: 20px;
+    position: absolute;
+    height:100%;
+    width: 1550px;
+    left: 320px;
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+.personal>.center-header{
+    height: 60px;
+    border-left: rgb(77,77,77) 15px solid;
+    padding-left: 30px;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+    border-bottom: rgb(77,77,77) 2px dashed;
+}
+
+.personal-resume>.center-header{
+    height: 60px;
+    border-left: rgb(255,205,68) 15px solid;
+    padding-left: 30px;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+    border-bottom: rgb(255,205,68) 2px dashed;
+}
+
+.my-city>.center-header{
+    height: 60px;
+    border-left: rgb(29,217,246) 15px solid;
+    padding-left: 30px;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+    border-bottom: rgb(29,217,246) 2px dashed;
+}
+
+.tech-some>.center-header{
+    height: 60px;
+    border-left: rgb(221,79,67) 15px solid;
+    padding-left: 30px;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+    border-bottom: rgb(221,79,67) 2px dashed;
+}
+
+.center-col>.personal>.main{
+    margin: 20px auto;
+    width: 1250px;
+}
+
+.personal-resume>.main{
+    margin: 20px auto;
+    width: 1250px;
+}
+
+.center-col>.personal>.main>img{
+    height: 200px;
+    height: 200px;
+    padding-right: 20px;
+}
+.my{
+    display: inline;
+    font-size: 80px;
+}
+.name{
+    display: inline;
+    font-size: 50px;
+}
+.fuck{
+    font-size: xx-large;
+}
+.tech-items{
+    display: flex;
+    width: 100%;
+}
+.tech-items>.item{
+    height: 150px;
+    width: 250px;
+    border: rgb(77,77,77) 2px dashed;
+    margin: 20px;
+}
+.tech-items>.item>.title{
+    font-size: large;
+    border-bottom: rgb(77,77,77) 2px dashed;
+    padding: 10px;
+}
+.tech-items>.item>.tech-context{
+    font-size: medium;
+    padding: 10px;
+    padding-left: 50px;
+}
+.aboutMe-title{
+    font-size: x-large;
+}
+.aboutMe-text{
+    padding-top: 15px;
+    font-size: medium;
+    line-height: 30px;
+}
+
+.personal-resume>.main .title{
+    font-size: x-large;
+    border-left: 10px solid rgb(255,205,68);
+    padding: 25px ;
+}
+.personal-resume>.main .context{
+    font-size: medium;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+/*家乡图片的手风琴样式*/
+
+.accordion-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.accordion-container .accordion-item {
+    list-style: none;
+    height: 500px;
+    transition: width 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-container .accordion-item:not(:hover) {
+    width: 20%;
+}
+.accordion-container .accordion-item:hover {
+    width: 800px;
+}
+.accordion-container .accordion-item:hover::after {
+    opacity: 1;
+}
+.accordion-container .accordion-item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.accordion-container .accordion-item .accordion-title {
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+/*# %￥￥￥￥￥￥￥￥￥￥￥*/
+
+.city-name{
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+.city-context{
+    line-height: 45px;
+    padding: 20px;
+}
+
+.tech-some>.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.tech-some>.main>.context-title{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-left: rgb(221,79,67) 5px solid;
+    font-size: x-large;
+    line-height: 80px;
+    padding-left: 50px;
+}
+
+.tech-some>.main>.context{
+    margin-top: 20px;
+    margin-left: 40px;
+    border-left: rgb(77,77,77) 2px dashed;
+    font-size: medium;
+    line-height: 35px;
+}
